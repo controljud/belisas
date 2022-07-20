@@ -14,4 +14,8 @@
     <li>git clone https://github.com/controljud/belisas.git</li>
     <li>composer update</li>
     <li>php artisan storage:link</li>
+    <li>php artisan migrate</li>
+    <li>php artisan key:secret</li>
+    <li>npm install</li>
+    <li>npm run dev</li>
 </ul>

@@ -18,7 +18,7 @@
                     <hr />
                 </b-form>
 
-                <b-button type="button" variant="primary" @click="login">
+                <b-button type="button" variant="primary" @click="esqueci">
                     <i class="fas fa-sign-in-alt"></i> Enviar lembrete
                 </b-button>
             </div>
