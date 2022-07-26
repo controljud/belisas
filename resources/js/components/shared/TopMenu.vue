@@ -10,11 +10,11 @@
 				<!-- Right aligned nav items -->
 				<b-navbar-nav class="ml-auto">
 					<b-nav-item class="nav-link" @click="$bvModal.show('loginModal')" v-if="!logged">
-						<font-awesome-icon icon="fa-solid fa-" /> 
+						<font-awesome-icon icon="fa-solid fa-user" /> 
 						Login
 					</b-nav-item>
 					<b-nav-item class="nav-link" @click="$bvModal.show('cadastroModal')" v-if="!logged">
-						<font-awesome-icon icon="fa-solid fa-" /> 
+						<font-awesome-icon icon="fa-solid fa-user-circle" /> 
 						Cadastre-se
 					</b-nav-item>
 					<b-nav-item>
@@ -34,17 +34,20 @@
 		</b-navbar>
 	</div>
 	<login-modal></login-modal>
+	<esqueci-modal></esqueci-modal>
 	<cadastro-modal></cadastro-modal>
   </div>
 </template>
 
 <script>
-	import LoginModal from '../login/LoginModal.vue'
-	import CadastroModal from '../login/CadastroModal.vue'
+	import LoginModal from '../login/LoginModal.vue';
+	import EsqueciModal from '../login/EsqueciModal.vue';
+	import CadastroModal from '../login/CadastroModal.vue';
 	
 	export default {
 		components: {
 			'login-modal': LoginModal,
+			'esqueci-modal': EsqueciModal,
 			'cadastro-modal': CadastroModal,
 		},
 

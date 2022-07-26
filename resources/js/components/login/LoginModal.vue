@@ -1,7 +1,10 @@
 <template>
     <div>
         <b-modal id="loginModal" hide-footer hide-header-close>
-            <template #modal-title>Login</template>
+            <template #modal-title>
+                <font-awesome-icon icon="fa-solid fa-user" /> 
+                Login
+            </template>
             <div class="d-block text-left">
                 <b-form>
                     <b-form-group label-for="email">
@@ -15,7 +18,7 @@
                     <b-form-group label-for="password">
                         <label class="d-flex justify-content-between">
                             Senha
-                            <small><a href="#">Esqueceu sua senha?</a></small>
+                            <small><a href="#" @click="$bvModal.hide('loginModal');$bvModal.show('esqueciModal')">Esqueceu sua senha?</a></small>
                         </label>
             
                         <b-form-input id="password" type="password" placeholder="Digite sua senha" v-model="form.password"></b-form-input>

@@ -1,7 +1,10 @@
 <template>
     <div>
         <b-modal id="cadastroModal" hide-footer hide-header-close>
-            <template #modal-title>Cadastro</template>
+            <template #modal-title>
+                <font-awesome-icon icon="fa-solid fa-user-circle" /> 
+                Cadastro
+            </template>
             <div class="d-block text-left">
                 <b-form>
                     <b-form-group label="Nome" label-for="nome">

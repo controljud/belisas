@@ -1,7 +1,10 @@
 <template>
     <div>
-        <b-modal id="loginModal" hide-footer hide-header-close>
-            <template #modal-title>Login</template>
+        <b-modal id="esqueciModal" hide-footer hide-header-close>
+            <template #modal-title>
+                <font-awesome-icon icon="fa-solid fa-user" /> 
+                Esqueci a senha
+            </template>
             <div class="d-block text-left">
                 <b-form>
                     <b-form-group label-for="email">
