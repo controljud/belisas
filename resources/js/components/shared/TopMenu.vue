@@ -20,9 +20,9 @@
 						Cadastre-se
 					</b-nav-item>
 					<b-nav-item>
-						<router-link :to="{name: 'home'}" class="nav-link" exact v-if="logged">
-							<font-awesome-icon icon="fa-solid fa-home" /> 
-							Home
+						<router-link :to="{name: 'store'}" class="nav-link" exact v-if="logged">
+							<font-awesome-icon icon="fa-solid fa-building" /> 
+							Estabelecimento
 						</router-link>
 					</b-nav-item>
 					<b-nav-item>

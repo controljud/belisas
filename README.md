@@ -13,4 +13,5 @@
 <ul>
     <li>git clone https://github.com/controljud/belisas.git</li>
     <li>composer update</li>
+    <li>php artisan storage:link</li>
 </ul>

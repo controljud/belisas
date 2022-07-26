@@ -1,10 +1,10 @@
-import Home from './components/home/Home.vue';
+import Store from './components/home/Store.vue';
 
 export default [
 	{
-		path: '/home',
-		name: 'home',
-		component: Home,
+		path: '/store',
+		name: 'store',
+		component: Store,
 		meta: {}
 	}
 ];
