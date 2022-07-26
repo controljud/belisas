@@ -28,6 +28,7 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { faSave } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faBuilding } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faPlus);
 library.add(faTrash);
@@ -36,6 +37,7 @@ library.add(faClose);
 library.add(faSave);
 library.add(faUser);
 library.add(faUserCircle);
+library.add(faBuilding);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;

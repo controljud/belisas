@@ -2,12 +2,14 @@
   <div class="forVue">
 	<div>
 		<b-navbar toggleable="lg" type="dark" variant="success">
-			<router-link to="/" class="navbar-brand" exact >Loteri Map</router-link>
+			<router-link to="/" class="navbar-brand" exact >
+				<img src="/images/belisas.png" class="logo-belisas"/>
+				Belisas
+			</router-link>
 	
 			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
 			<b-collapse id="nav-collapse" is-nav>
-				<!-- Right aligned nav items -->
 				<b-navbar-nav class="ml-auto">
 					<b-nav-item class="nav-link" @click="$bvModal.show('loginModal')" v-if="!logged">
 						<font-awesome-icon icon="fa-solid fa-user" /> 
@@ -33,9 +35,10 @@
 			</b-collapse>
 		</b-navbar>
 	</div>
-	<login-modal></login-modal>
-	<esqueci-modal></esqueci-modal>
-	<cadastro-modal></cadastro-modal>
+	
+	<login-modal v-if="!logged"></login-modal>
+	<esqueci-modal v-if="!logged"></esqueci-modal>
+	<cadastro-modal v-if="!logged"></cadastro-modal>
   </div>
 </template>
 
@@ -76,5 +79,10 @@
 <style scoped>
 	.navbar {
 		padding-left: 15px;
+	}
+
+	.logo-belisas {
+		width: 45px;
+		margin-right: 5px;
 	}
 </style>
