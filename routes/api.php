@@ -23,10 +23,6 @@ Route::post('/login', 'App\Http\Controllers\Api\LoginController@login');
 Route::post('/cadastro', 'App\Http\Controllers\Api\LoginController@cadastro');
 
 Route::group(['middleware' => ['jwt.auth']], function () {
-    Route::post('/store', 'App\Http\Controllers\Api\StoreController@postStore');
-    Route::get('/stores/{id_user}', 'App\Http\Controllers\Api\StoreController@getStores');
-
-    Route::group(['prefix' => 'customer'], function() {
-        
-    });
+    Route::post('/establishment', 'App\Http\Controllers\Api\EstablishmentController@postEstablishment');
+    Route::get('/establishments/{id_user}', 'App\Http\Controllers\Api\EstablishmentController@getEstablishments');
 });

@@ -1,10 +1,10 @@
-import Store from './components/home/Store.vue';
+import Establishment from './components/establishment/Establishment.vue';
 
 export default [
 	{
-		path: '/store',
-		name: 'store',
-		component: Store,
+		path: '/establishments',
+		name: 'establishments',
+		component: Establishment,
 		meta: {}
 	}
 ];

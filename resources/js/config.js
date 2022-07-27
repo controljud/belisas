@@ -3,6 +3,6 @@ export const api = {
     login: '/api/login',
     cadastro: '/api/cadastro',
 
-    store: '/api/store',
-    stores: '/api/stores/',
+    establishment: '/api/establishment',
+    establishments: '/api/establishments/',
 }

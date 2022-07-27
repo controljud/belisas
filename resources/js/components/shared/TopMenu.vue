@@ -20,9 +20,9 @@
 						Cadastre-se
 					</b-nav-item>
 					<b-nav-item>
-						<router-link :to="{name: 'store'}" class="nav-link" exact v-if="logged">
+						<router-link :to="{name: 'establishments'}" class="nav-link" exact v-if="logged">
 							<font-awesome-icon icon="fa-solid fa-building" /> 
-							Estabelecimento
+							Estabelecimentos
 						</router-link>
 					</b-nav-item>
 					<b-nav-item>
@@ -82,7 +82,7 @@
 	}
 
 	.logo-belisas {
-		width: 45px;
+		width: 100px;
 		margin-right: 5px;
 	}
 </style>
