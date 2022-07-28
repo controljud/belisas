@@ -25,4 +25,6 @@ Route::post('/cadastro', 'App\Http\Controllers\Api\LoginController@cadastro');
 Route::group(['middleware' => ['jwt.auth']], function () {
     Route::post('/establishment', 'App\Http\Controllers\Api\EstablishmentController@postEstablishment');
     Route::get('/establishments/{id_user}', 'App\Http\Controllers\Api\EstablishmentController@getEstablishments');
+
+    Route::get('/styles', 'App\Http\Controllers\Api\StyleController@getStyles');
 });

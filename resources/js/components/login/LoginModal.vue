@@ -61,10 +61,12 @@
                         localStorage.setItem('user', JSON.stringify(dados.data.user));
                         localStorage.setItem('token', dados.data.token);
 
-                        window.location.href = "/home";
+                        window.location.href = "/establishment";
                     } else {
                         this.$toast.warning("Não foi possível realizar o login");
                     }
+                }).catch(error => {
+                    this.$toast.error("Erro desconhecido ao realizar o login");
                 });
             }
         }

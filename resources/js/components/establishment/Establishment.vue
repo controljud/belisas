@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>Estabelecimentos</h3>
+				<h3>Seus Estabelecimentos</h3>
 				<p>Selecione aqui o estabelecimento que deseja controlar, ou adicione um novo</p>
 			</div>
 		</div>

@@ -64,23 +64,9 @@
                         if (response.data.status == 0) {
                             this.$toast.success("Cadastro efetuado com sucesso");
 
-                            axios.post(api.login, this.form).then(response => {
-                                let dados = response.data;
-                                
-                                if (dados.status == 0) {
-                                    localStorage.setItem('user', dados.data.user);
-                                    localStorage.setItem('token', dados.data.token);
-
-                                    // TODO - Encaminhar para o home
-                                    this.$router.push('Home');
-                                }
-                            });
-                            
-                            // TODO - Login automático - JWT
-                            // TODO - Encaminhar para o home
+                            this.logar();
                         } else {
-                            this.$toast.danger("Falha no cadastro");
-                            // TODO - Tratamento de erros
+                            this.$toast.error("Falha no cadastro");
                         }
                     });
                 } else {
@@ -88,6 +74,23 @@
                 }
 
                 this.apagaDados();
+            },
+
+            logar() {
+                axios.post(api.login, this.form).then(response => {
+                    let dados = response.data;
+                    
+                    if (dados.status == 0) {
+                        localStorage.setItem('user', JSON.stringify(dados.data.user));
+                        localStorage.setItem('token', dados.data.token);
+
+                        window.location.href = '/';
+                    } else {
+                        this.$toast.warning("Não foi possível realizar o login");
+                    }
+                }).catch(error => {
+                    this.$toast.error("Erro desconhecido ao realizar o login");
+                });
             },
 
             apagaDados() {

@@ -22,7 +22,7 @@ class EstablishmentController extends Controller
                 'data' => $establishments
             ]);
         } catch (Exception $ex) {
-            Log::error("STORES GET: " . json_encode($ex));
+            Log::error("ESTABLISMENTS GET: " . json_encode($ex));
 
             return response()->json([
                 'status' => 0,

@@ -5,4 +5,6 @@ export const api = {
 
     establishment: '/api/establishment',
     establishments: '/api/establishments/',
+
+    styles: '/api/styles',
 }
